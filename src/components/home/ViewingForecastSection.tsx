@@ -6,20 +6,9 @@ import Image from 'next/image';
 
 export default function ViewingForecastSection() {
   return (
-    <section
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        padding: '80px 0',
-        position: 'relative',
-        zIndex: 1,
-        borderTop: '1px solid var(--border-subtle)',
-      }}
-    >
+    <section className="home-fullscreen-section" style={{ borderTop: '1px solid var(--border-subtle)' }}>
       <div className="site-container" style={{ width: '100%' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center' }}>
+        <div className="responsive-2col-grid">
           
           {/* Left Column: Heading & Description */}
           <div>
@@ -38,13 +27,13 @@ export default function ViewingForecastSection() {
           </div>
 
           {/* Right Column: 3D Upright Dual Phones Floating Seamlessly */}
-          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', width: '100%', maxWidth: '100%', overflow: 'hidden' }}>
             {/* Subtle warm orange glow backdrop */}
             <div
               style={{
                 position: 'absolute',
-                width: '340px',
-                height: '340px',
+                width: 'min(100%, 340px)',
+                height: 'min(100%, 340px)',
                 background: 'radial-gradient(circle, rgba(249, 115, 22, 0.12) 0%, rgba(255, 183, 3, 0.06) 50%, transparent 70%)',
                 filter: 'blur(50px)',
                 borderRadius: '50%',
@@ -63,8 +52,8 @@ export default function ViewingForecastSection() {
               }}
             >
               <Image
-                src="/images/forecast-phones-3d.png"
-                alt="Crypto Watchlist and Candlestick Chart 3D Phones"
+                src="/images/forecast-laptop-front-3d.png"
+                alt="Bitcoin Bazaar Live OTC Desk Web Portal 3D Laptop Mockup"
                 width={650}
                 height={650}
                 style={{

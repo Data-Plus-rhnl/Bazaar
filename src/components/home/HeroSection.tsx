@@ -30,23 +30,23 @@ export default function HeroSection() {
           paddingBottom: '24px',
         }}
       >
-        <div style={{ display: 'grid', gridTemplateColumns: '1.05fr 0.95fr', gap: '48px', alignItems: 'center', width: '100%' }}>
+        <div className="hero-grid">
           
           {/* Left Column: Heading & CTAs */}
           <div style={{ zIndex: 2 }}>
             <div className="section-tag" style={{ marginBottom: '18px' }}>
               Port Coquitlam &bull; Vancouver OTC Desk
             </div>
-            <h1 style={{ fontSize: 'clamp(2.2rem, 3.8vw, 3.6rem)', lineHeight: 1.14, marginBottom: '24px', letterSpacing: '-0.03em', fontWeight: 800 }}>
+            <h1 style={{ fontSize: 'clamp(2.1rem, 6vw, 3.6rem)', lineHeight: 1.14, marginBottom: '24px', letterSpacing: '-0.03em', fontWeight: 800 }}>
               <span style={{ color: 'var(--accent-primary)' }}>Secure</span> and Easy<br />
               Way To Trade <span style={{ color: 'var(--accent-gold)' }}>Bitcoin</span>
             </h1>
 
-            <p style={{ fontSize: '1.08rem', lineHeight: 1.75, color: 'var(--text-muted)', marginBottom: '36px', maxWidth: '490px' }}>
+            <p style={{ fontSize: '1.05rem', lineHeight: 1.75, color: 'var(--text-muted)', marginBottom: '36px', maxWidth: '490px' }}>
               A place for everyone who wants to simply buy and sell Bitcoins and other cryptocurrencies. Deposit or request funds using <strong>Cash</strong>, <strong>Interac e-Transfer</strong>, or <strong>Wire Transfer</strong>. Instant buy/sell at fair market rates is guaranteed.
             </p>
 
-            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
+            <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap', justifyContent: 'inherit' }}>
               <Link href="/contact" className="btn-accent" style={{ padding: '14px 34px' }}>
                 Book Appointment
               </Link>
@@ -57,14 +57,14 @@ export default function HeroSection() {
           </div>
 
           {/* Right Column: 3D Phones Floating with Dynamic Bitcoin Orange Neon SVG Spiral Wire */}
-          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: '520px' }}>
+          <div style={{ position: 'relative', display: 'flex', justifyContent: 'center', alignItems: 'center', minHeight: 'clamp(320px, 45vw, 520px)', width: '100%', maxWidth: '100%', overflow: 'hidden' }}>
             
             {/* Ambient Warm Bitcoin Orange Glow */}
             <div
               style={{
                 position: 'absolute',
-                width: '400px',
-                height: '400px',
+                width: 'min(100%, 400px)',
+                height: 'min(100%, 400px)',
                 background: 'radial-gradient(circle, rgba(249, 115, 22, 0.16) 0%, rgba(255, 183, 3, 0.08) 45%, transparent 70%)',
                 filter: 'blur(50px)',
                 borderRadius: '50%',
@@ -136,8 +136,8 @@ export default function HeroSection() {
               }}
             >
               <Image
-                src="/images/hero-phones-3d.png"
-                alt="Bitcoin Bazaar 3D Crypto Trading App Mockup"
+                src="/images/hero-phones-realistic-3d.png"
+                alt="Bitcoin Bazaar In-Person OTC Interac e-Transfer and Personal Wallet Settlement"
                 width={650}
                 height={650}
                 style={{

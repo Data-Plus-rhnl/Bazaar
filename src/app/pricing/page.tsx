@@ -178,7 +178,7 @@ export default function PricingPage() {
             <h2 style={{ fontSize: '1.8rem', color: '#fff' }}>Instant Fee &amp; Exchange Calculator</h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '40px', alignItems: 'center', maxWidth: '820px', margin: '0 auto' }}>
+          <div className="responsive-2col-grid" style={{ maxWidth: '820px', margin: '0 auto' }}>
             <div>
               <label style={{ display: 'block', fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--text-dim)', marginBottom: '8px', fontWeight: 700 }}>
                 You Pay (CAD)

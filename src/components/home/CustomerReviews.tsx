@@ -26,18 +26,7 @@ export default function CustomerReviews() {
   ];
 
   return (
-    <section
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        padding: '80px 0',
-        position: 'relative',
-        zIndex: 1,
-        borderTop: '1px solid var(--border-subtle)',
-      }}
-    >
+    <section className="home-fullscreen-section" style={{ borderTop: '1px solid var(--border-subtle)' }}>
       <div className="site-container" style={{ width: '100%' }}>
         {/* Title */}
         <div style={{ textAlign: 'center', marginBottom: '48px' }}>
@@ -53,7 +42,7 @@ export default function CustomerReviews() {
         </div>
 
         {/* 3 Review Cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
+        <div className="responsive-cards-grid">
           {reviews.map((rev) => (
             <div
               key={rev.id}

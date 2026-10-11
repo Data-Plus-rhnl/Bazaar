@@ -38,17 +38,7 @@ export default function SecurityPrivacyGrid() {
   ];
 
   return (
-    <section
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        padding: '80px 0',
-        position: 'relative',
-        zIndex: 1,
-      }}
-    >
+    <section className="home-fullscreen-section">
       <div className="site-container" style={{ width: '100%' }}>
         {/* Section Title */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', marginBottom: '48px', flexWrap: 'wrap', gap: '20px' }}>
@@ -69,7 +59,7 @@ export default function SecurityPrivacyGrid() {
         </div>
 
         {/* 3 Pillar Cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
+        <div className="responsive-cards-grid">
           {pillars.map((item) => (
             <div key={item.id} className="hc-card" style={{ display: 'flex', flexDirection: 'column', gap: '18px' }}>
               <div

@@ -3,19 +3,9 @@ import Link from 'next/link';
 
 export default function SeamlessTrading() {
   return (
-    <section
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        padding: '80px 0',
-        position: 'relative',
-        zIndex: 1,
-      }}
-    >
+    <section className="home-fullscreen-section">
       <div className="site-container" style={{ width: '100%' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', alignItems: 'center' }}>
+        <div className="responsive-2col-grid">
           {/* Left Column */}
           <div>
             <div className="section-tag" style={{ marginBottom: '16px' }}>
@@ -33,15 +23,15 @@ export default function SeamlessTrading() {
           </div>
 
           {/* Right Column: High-Contrast Floating Metric Badges with Bitcoin Orange Neon SVG Ring */}
-          <div style={{ position: 'relative', minHeight: '380px', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+          <div style={{ position: 'relative', minHeight: '360px', width: '100%', maxWidth: '420px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'center', overflow: 'hidden' }}>
             
             {/* Background Glowing Ring & Orbit SVGs in Bitcoin Orange */}
             <svg
               viewBox="0 0 400 400"
               style={{
                 position: 'absolute',
-                width: '380px',
-                height: '380px',
+                width: 'min(100%, 360px)',
+                height: 'min(100%, 360px)',
                 pointerEvents: 'none',
               }}
             >
@@ -77,19 +67,19 @@ export default function SeamlessTrading() {
             <div
               style={{
                 position: 'absolute',
-                top: '25px',
-                left: '25px',
+                top: '20px',
+                left: 'clamp(5px, 3vw, 20px)',
                 background: 'rgba(12, 16, 24, 0.88)',
                 border: '1px solid rgba(255, 255, 255, 0.12)',
                 borderRadius: '16px',
-                padding: '14px 22px',
+                padding: '12px 18px',
                 backdropFilter: 'blur(20px)',
                 boxShadow: '0 16px 36px rgba(0,0,0,0.7)',
                 zIndex: 2,
               }}
             >
-              <div style={{ fontSize: '1.5rem', fontWeight: '800', color: '#ffb703', fontFamily: 'var(--font-display)', lineHeight: 1.1 }}>$50M+</div>
-              <div style={{ fontSize: '0.72rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '2px' }}>Trade Volume</div>
+              <div style={{ fontSize: '1.4rem', fontWeight: '800', color: '#ffb703', fontFamily: 'var(--font-display)', lineHeight: 1.1 }}>$50M+</div>
+              <div style={{ fontSize: '0.7rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '2px' }}>Trade Volume</div>
             </div>
 
             {/* Metric Card 2: Center Main - 10,000+ */}
@@ -99,17 +89,17 @@ export default function SeamlessTrading() {
                 background: 'rgba(14, 18, 28, 0.94)',
                 border: '1px solid rgba(249, 115, 22, 0.35)',
                 borderRadius: '20px',
-                padding: '24px 38px',
+                padding: '22px 32px',
                 textAlign: 'center',
                 backdropFilter: 'blur(24px)',
                 boxShadow: '0 24px 60px rgba(0,0,0,0.85), 0 0 30px rgba(249, 115, 22, 0.15)',
                 zIndex: 3,
               }}
             >
-              <div style={{ fontSize: '2.3rem', fontWeight: '900', color: '#ffffff', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
+              <div style={{ fontSize: '2.1rem', fontWeight: '900', color: '#ffffff', fontFamily: 'var(--font-display)', letterSpacing: '-0.02em', lineHeight: 1.1 }}>
                 10,000+
               </div>
-              <div style={{ fontSize: '0.78rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', marginTop: '6px' }}>
+              <div style={{ fontSize: '0.75rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.08em', marginTop: '6px' }}>
                 In-Person Trades
               </div>
             </div>
@@ -118,12 +108,12 @@ export default function SeamlessTrading() {
             <div
               style={{
                 position: 'absolute',
-                bottom: '25px',
-                right: '25px',
+                bottom: '20px',
+                right: 'clamp(5px, 3vw, 20px)',
                 background: 'rgba(12, 16, 24, 0.88)',
                 border: '1px solid rgba(255, 255, 255, 0.12)',
                 borderRadius: '16px',
-                padding: '14px 22px',
+                padding: '12px 18px',
                 backdropFilter: 'blur(20px)',
                 boxShadow: '0 16px 36px rgba(0,0,0,0.7)',
                 zIndex: 2,

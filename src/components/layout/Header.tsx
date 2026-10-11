@@ -61,7 +61,6 @@ export default function Header() {
             aria-label="Toggle navigation"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             style={{
-              display: 'none',
               background: 'rgba(255, 255, 255, 0.05)',
               border: '1px solid var(--border-medium)',
               color: '#fff',

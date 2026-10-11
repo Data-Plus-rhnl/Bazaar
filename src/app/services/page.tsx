@@ -84,7 +84,7 @@ export default function ServicesPage() {
         </div>
 
         {/* Interactive Service Showcase Grid */}
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.6fr', gap: '32px', marginBottom: '64px', alignItems: 'stretch' }}>
+        <div className="services-grid">
           {/* Left: Service Selector Tabs */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
             {servicesData.map((s, idx) => {

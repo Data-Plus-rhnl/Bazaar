@@ -35,7 +35,7 @@ export default function ContactPage() {
           </p>
         </div>
 
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 1.2fr', gap: '48px', alignItems: 'start' }}>
+        <div className="contact-grid">
           {/* Left Column: Office Details */}
           <div style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
             <div className="hc-card" style={{ padding: '36px' }}>

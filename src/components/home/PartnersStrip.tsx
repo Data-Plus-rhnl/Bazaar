@@ -64,18 +64,9 @@ export default function PartnersStrip() {
   ];
 
   return (
-    <div style={{ padding: '38px 0', borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)', position: 'relative', zIndex: 1 }}>
+    <div style={{ padding: '28px 0', borderTop: '1px solid var(--border-subtle)', borderBottom: '1px solid var(--border-subtle)', position: 'relative', zIndex: 1 }}>
       <div className="site-container">
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            flexWrap: 'nowrap',
-            gap: '24px',
-            whiteSpace: 'nowrap',
-          }}
-        >
+        <div className="partners-strip-scroll">
           {brands.map((b, idx) => (
             <div
               key={idx}

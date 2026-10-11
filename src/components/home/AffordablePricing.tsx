@@ -46,17 +46,7 @@ export default function AffordablePricing() {
   ];
 
   return (
-    <section
-      style={{
-        minHeight: '100vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        padding: '80px 0',
-        position: 'relative',
-        zIndex: 1,
-      }}
-    >
+    <section className="home-fullscreen-section">
       <div className="site-container" style={{ width: '100%' }}>
         {/* Section Header */}
         <div style={{ textAlign: 'center', marginBottom: '56px' }}>
@@ -70,7 +60,7 @@ export default function AffordablePricing() {
         </div>
 
         {/* 3 High-Contrast Pricing Cards */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '24px', alignItems: 'stretch' }}>
+        <div className="responsive-cards-grid" style={{ alignItems: 'stretch' }}>
           {tiers.map((tier) => (
             <div
               key={tier.id}

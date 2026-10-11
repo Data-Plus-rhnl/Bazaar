@@ -3,9 +3,9 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer style={{ background: '#05070a', borderTop: '1px solid var(--border-subtle)', padding: '70px 0 40px', position: 'relative', zIndex: 1 }}>
+    <footer style={{ background: '#05070a', borderTop: '1px solid var(--border-subtle)', padding: '60px 0 36px', position: 'relative', zIndex: 1 }}>
       <div className="site-container">
-        <div style={{ display: 'grid', gridTemplateColumns: '1.4fr 0.8fr 0.8fr 0.8fr', gap: '48px', paddingBottom: '50px', borderBottom: '1px solid var(--border-subtle)' }}>
+        <div className="footer-grid">
           {/* Column 1: Brand & Direct Action */}
           <div>
             <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', marginBottom: '18px' }}>

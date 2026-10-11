@@ -3,24 +3,14 @@ import Link from 'next/link';
 
 export default function LetUsWorkTogether() {
   return (
-    <section
-      style={{
-        minHeight: '85vh',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        padding: '80px 0',
-        position: 'relative',
-        zIndex: 1,
-      }}
-    >
+    <section className="home-fullscreen-section">
       <div className="site-container" style={{ width: '100%' }}>
         <div
           style={{
             background: 'linear-gradient(180deg, #161c2c 0%, #0d111a 100%)',
             border: '1px solid var(--border-medium)',
-            borderRadius: '28px',
-            padding: '64px 32px',
+            borderRadius: '24px',
+            padding: 'clamp(36px, 6vw, 64px) clamp(18px, 4vw, 32px)',
             textAlign: 'center',
             boxShadow: '0 24px 60px rgba(0, 0, 0, 0.7)',
             maxWidth: '860px',

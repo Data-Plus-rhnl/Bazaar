@@ -91,8 +91,8 @@ export default function AboutPage() {
         </div>
 
         {/* Overview Box */}
-        <div className="hc-card" style={{ padding: '48px 36px', marginBottom: '56px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 0.8fr', gap: '48px', alignItems: 'center' }}>
+        <div className="hc-card" style={{ padding: 'clamp(28px, 5vw, 48px) clamp(20px, 4vw, 36px)', marginBottom: '56px' }}>
+          <div className="responsive-2col-grid">
             <div>
               <h2 style={{ fontSize: '1.8rem', color: 'var(--text-white)', marginBottom: '18px' }}>
                 A Trusted Place to Buy &amp; Sell Bitcoin in Person
@@ -148,7 +148,7 @@ export default function AboutPage() {
             <h2 style={{ fontSize: 'clamp(2rem, 3.5vw, 2.6rem)' }}>Our Core Advantages</h2>
           </div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: '24px' }}>
+          <div className="responsive-cards-grid">
             {advantages.map((adv) => (
               <div key={adv.num} className="hc-card" style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>

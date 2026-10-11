@@ -45,6 +45,9 @@ html {
   scroll-behavior: smooth;
   background-color: var(--bg-main);
   color: var(--text-white);
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
 }
 
 body {
@@ -54,6 +57,9 @@ body {
   -webkit-font-smoothing: antialiased;
   min-height: 100vh;
   overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
 }
 
 /* Background Subtle Grid Pattern from Bitcoin Bazaar */
@@ -166,6 +172,12 @@ body {
   max-width: var(--container-width);
   margin: 0 auto;
   padding: 0 24px;
+}
+
+@media (max-width: 640px) {
+  .site-container {
+    padding: 0 16px !important;
+  }
 }
 
 /* Typography */
@@ -332,8 +344,203 @@ p {
   border-color: var(--accent-primary);
 }
 
+/* ==========================================================================
+   Mobile & Tablet Responsive System
+   ========================================================================== */
+
+/* Fullscreen Sections on Desktop -> Auto Compact Height on Mobile */
+.home-fullscreen-section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justifyContent: center;
+  padding: 80px 0;
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 992px) {
+  .home-fullscreen-section {
+    min-height: auto !important;
+    padding: 60px 0 !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-fullscreen-section {
+    padding: 48px 0 !important;
+  }
+}
+
+/* 2-Column Responsive Split Layouts */
+.responsive-2col-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 48px;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .responsive-2col-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    text-align: center;
+  }
+  .responsive-2col-grid > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Hero 2-Column Grid */
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 48px;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+    text-align: center;
+  }
+  .hero-grid > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Header & Mobile Nav */
+.mobile-toggle-btn {
+  display: none !important;
+}
+
 @media (max-width: 860px) {
+  .hc-header {
+    width: calc(100% - 24px) !important;
+    padding: 8px 14px !important;
+    top: 10px !important;
+  }
   .hc-nav-links {
+    display: none !important;
+  }
+  .mobile-toggle-btn {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+/* Partners Strip Horizontal Scroll on Mobile */
+.partners-strip-scroll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+  .partners-strip-scroll {
+    overflow-x: auto;
+    padding: 6px 12px 10px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .partners-strip-scroll::-webkit-scrollbar {
     display: none;
+  }
+}
+
+/* Cards Responsive Grid */
+.responsive-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .responsive-cards-grid {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Footer Responsive Grid */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr 0.8fr;
+  gap: 48px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 36px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 28px !important;
+    text-align: center;
+  }
+  .footer-grid a {
+    display: inline-block;
+  }
+}
+
+/* Floating Bitcoin Orbs Resizing on Smaller Screens */
+@media (max-width: 768px) {
+  .floating-bitcoin-orb {
+    transform: scale(0.55) !important;
+    opacity: 0.45 !important;
+  }
+  .orb-pos-left-mid {
+    left: 4px !important;
+  }
+  .orb-pos-right-top {
+    right: 4px !important;
+  }
+}
+
+/* Contact Page Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 48px;
+  align-items: start;
+}
+
+@media (max-width: 992px) {
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+}
+
+/* Services Page Showcase Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr;
+  gap: 32px;
+  margin-bottom: 64px;
+  align-items: stretch;
+}
+
+@media (max-width: 992px) {
+  .services-grid {
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
   }
 }
