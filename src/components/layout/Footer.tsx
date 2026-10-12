@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
   return (
@@ -8,13 +9,14 @@ export default function Footer() {
         <div className="footer-grid">
           {/* Column 1: Brand & Direct Action */}
           <div>
-            <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none', marginBottom: '18px' }}>
-              <div style={{ width: '30px', height: '30px', borderRadius: '50%', background: 'var(--accent-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#000', fontWeight: '800', fontSize: '0.95rem' }}>
-                ₿
-              </div>
-              <span style={{ fontFamily: 'var(--font-display)', fontWeight: '800', fontSize: '1.15rem', color: '#fff' }}>
-                BITCOIN <span style={{ color: 'var(--accent-primary)' }}>BAZAAR</span>
-              </span>
+            <Link href="/" style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none', marginBottom: '18px' }}>
+              <Image
+                src="/images/logoN.png"
+                alt="Bitcoin Bazaar"
+                width={155}
+                height={42}
+                style={{ height: '36px', width: 'auto', display: 'block' }}
+              />
             </Link>
 
             <p style={{ fontSize: '0.9rem', lineHeight: 1.7, color: 'var(--text-muted)', marginBottom: '20px', maxWidth: '320px' }}>

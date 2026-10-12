@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Header() {
@@ -21,13 +22,15 @@ export default function Header() {
     <>
       <header className="hc-header">
         {/* Left: Brand Logo */}
-        <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '10px', textDecoration: 'none' }}>
-          <div style={{ width: '32px', height: '32px', borderRadius: '50%', background: 'var(--accent-primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#000', fontWeight: '800', fontSize: '1rem' }}>
-            ₿
-          </div>
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: '800', fontSize: '1.2rem', letterSpacing: '-0.02em', color: '#fff' }}>
-            BITCOIN <span style={{ color: 'var(--accent-primary)' }}>BAZAAR</span>
-          </span>
+        <Link href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <Image
+            src="/images/logoN.png"
+            alt="Bitcoin Bazaar"
+            width={155}
+            height={42}
+            priority
+            style={{ height: '36px', width: 'auto', display: 'block' }}
+          />
         </Link>
 
         {/* Center: Clean Nav Links */}
