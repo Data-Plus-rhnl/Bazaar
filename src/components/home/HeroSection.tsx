@@ -65,7 +65,7 @@ export default function HeroSection() {
                 position: 'absolute',
                 width: 'min(100%, 400px)',
                 height: 'min(100%, 400px)',
-                background: 'radial-gradient(circle, rgba(249, 115, 22, 0.16) 0%, rgba(255, 183, 3, 0.08) 45%, transparent 70%)',
+                background: 'radial-gradient(circle, rgba(243, 144, 25, 0.16) 0%, rgba(255, 183, 3, 0.08) 45%, transparent 70%)',
                 filter: 'blur(50px)',
                 borderRadius: '50%',
                 pointerEvents: 'none',
@@ -92,7 +92,7 @@ export default function HeroSection() {
               <defs>
                 <linearGradient id="orangeSwirlBack" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stopColor="#ffb703" stopOpacity="0.95" />
-                  <stop offset="40%" stopColor="#f97316" stopOpacity="0.9" />
+                  <stop offset="40%" stopColor="#f39019" stopOpacity="0.9" />
                   <stop offset="100%" stopColor="#ea580c" stopOpacity="0.8" />
                 </linearGradient>
                 <filter id="orangeGlowBack" x="-30%" y="-30%" width="160%" height="160%">
@@ -170,7 +170,7 @@ export default function HeroSection() {
                 <linearGradient id="orangeSwirlFront" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stopColor="#fffbeb" stopOpacity="1" />
                   <stop offset="25%" stopColor="#ffb703" stopOpacity="1" />
-                  <stop offset="70%" stopColor="#f97316" stopOpacity="0.95" />
+                  <stop offset="70%" stopColor="#f39019" stopOpacity="0.95" />
                   <stop offset="100%" stopColor="#ea580c" stopOpacity="0.85" />
                 </linearGradient>
                 <filter id="orangeGlowFront" x="-40%" y="-40%" width="180%" height="180%">
@@ -193,7 +193,7 @@ export default function HeroSection() {
               />
 
               {/* Terminal Glowing Node on Outer Right Flank */}
-              <circle cx="515" cy="365" r="5.5" fill="#f97316" filter="url(#orangeGlowFront)" />
+              <circle cx="515" cy="365" r="5.5" fill="#f39019" filter="url(#orangeGlowFront)" />
               <circle cx="515" cy="365" r="2.5" fill="#ffffff" />
 
               {/* Foreground Orbit Sparkle Accents */}

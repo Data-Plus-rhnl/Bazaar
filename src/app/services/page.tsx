@@ -105,7 +105,7 @@ export default function ServicesPage() {
                     alignItems: 'center',
                     justifyContent: 'space-between',
                     transition: 'all 0.2s ease',
-                    boxShadow: isActive ? '0 10px 30px rgba(249, 115, 22, 0.15)' : 'none',
+                    boxShadow: isActive ? '0 10px 30px rgba(243, 144, 25, 0.15)' : 'none',
                   }}
                 >
                   <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
@@ -190,8 +190,8 @@ export default function ServicesPage() {
         {/* Walk-in Process Banner */}
         <div
           style={{
-            background: 'rgba(249, 115, 22, 0.05)',
-            border: '1px solid rgba(249, 115, 22, 0.25)',
+            background: 'rgba(243, 144, 25, 0.05)',
+            border: '1px solid rgba(243, 144, 25, 0.25)',
             borderRadius: '20px',
             padding: '36px',
             display: 'flex',

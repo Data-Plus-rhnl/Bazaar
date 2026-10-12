@@ -35,15 +35,15 @@ export default function LiveTradeCalculator() {
 
             <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '32px', textAlign: 'left', width: '100%' }}>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                <div style={{ width: '22px', height: '22px', borderRadius: '50%', background: 'rgba(249, 115, 22, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-primary)', fontSize: '0.75rem', fontWeight: 'bold', flexShrink: 0, marginTop: '2px' }}>✓</div>
+                <div style={{ width: '22px', height: '22px', borderRadius: '50%', background: 'rgba(243, 144, 25, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-primary)', fontSize: '0.75rem', fontWeight: 'bold', flexShrink: 0, marginTop: '2px' }}>✓</div>
                 <span style={{ color: 'var(--text-white)', fontWeight: '600', fontSize: '0.92rem' }}>Locked rate at the time of your appointment</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                <div style={{ width: '22px', height: '22px', borderRadius: '50%', background: 'rgba(249, 115, 22, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-primary)', fontSize: '0.75rem', fontWeight: 'bold', flexShrink: 0, marginTop: '2px' }}>✓</div>
+                <div style={{ width: '22px', height: '22px', borderRadius: '50%', background: 'rgba(243, 144, 25, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-primary)', fontSize: '0.75rem', fontWeight: 'bold', flexShrink: 0, marginTop: '2px' }}>✓</div>
                 <span style={{ color: 'var(--text-white)', fontWeight: '600', fontSize: '0.92rem' }}>Same-day settlement in Cash or Interac e-Transfer</span>
               </div>
               <div style={{ display: 'flex', alignItems: 'flex-start', gap: '12px' }}>
-                <div style={{ width: '22px', height: '22px', borderRadius: '50%', background: 'rgba(249, 115, 22, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-primary)', fontSize: '0.75rem', fontWeight: 'bold', flexShrink: 0, marginTop: '2px' }}>✓</div>
+                <div style={{ width: '22px', height: '22px', borderRadius: '50%', background: 'rgba(243, 144, 25, 0.15)', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--accent-primary)', fontSize: '0.75rem', fontWeight: 'bold', flexShrink: 0, marginTop: '2px' }}>✓</div>
                 <span style={{ color: 'var(--text-white)', fontWeight: '600', fontSize: '0.92rem' }}>Direct transfer to your self-custody wallet</span>
               </div>
             </div>

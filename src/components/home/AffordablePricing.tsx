@@ -73,7 +73,7 @@ export default function AffordablePricing() {
                 flexDirection: 'column',
                 justifyContent: 'space-between',
                 position: 'relative',
-                boxShadow: tier.popular ? '0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(249, 115, 22, 0.2)' : 'none',
+                boxShadow: tier.popular ? '0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(243, 144, 25, 0.2)' : 'none',
               }}
             >
               <div>

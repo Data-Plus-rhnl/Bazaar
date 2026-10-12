@@ -157,8 +157,8 @@ export default function AboutPage() {
                       width: '44px',
                       height: '44px',
                       borderRadius: '12px',
-                      background: 'rgba(249, 115, 22, 0.12)',
-                      border: '1px solid rgba(249, 115, 22, 0.3)',
+                      background: 'rgba(243, 144, 25, 0.12)',
+                      border: '1px solid rgba(243, 144, 25, 0.3)',
                       color: 'var(--accent-primary)',
                       display: 'flex',
                       alignItems: 'center',
@@ -183,12 +183,12 @@ export default function AboutPage() {
           id="risk-warning"
           style={{
             borderLeft: '4px solid var(--accent-primary)',
-            background: 'rgba(249, 115, 22, 0.05)',
+            background: 'rgba(243, 144, 25, 0.05)',
             padding: '28px 32px',
             borderRadius: '0 16px 16px 0',
-            borderTop: '1px solid rgba(249, 115, 22, 0.2)',
-            borderRight: '1px solid rgba(249, 115, 22, 0.2)',
-            borderBottom: '1px solid rgba(249, 115, 22, 0.2)',
+            borderTop: '1px solid rgba(243, 144, 25, 0.2)',
+            borderRight: '1px solid rgba(243, 144, 25, 0.2)',
+            borderBottom: '1px solid rgba(243, 144, 25, 0.2)',
           }}
         >
           <h4 style={{ color: 'var(--accent-primary)', textTransform: 'uppercase', letterSpacing: '0.1em', fontSize: '0.95rem', fontWeight: 800, marginBottom: '10px' }}>

@@ -50,14 +50,14 @@ export default function HeroRedesign() {
                     <feComposite in="SourceGraphic" in2="blur" operator="over" />
                   </filter>
                 </defs>
-                <path d="M 220 200 C 230 140, 270 110, 310 120 C 340 130, 370 100, 400 70" stroke="#f97316" strokeWidth="1.8" strokeOpacity="0.9" fill="none" filter="url(#glow-orange)" />
+                <path d="M 220 200 C 230 140, 270 110, 310 120 C 340 130, 370 100, 400 70" stroke="#f39019" strokeWidth="1.8" strokeOpacity="0.9" fill="none" filter="url(#glow-orange)" />
                 <path d="M 223 200 C 233 141, 272 112, 312 122 C 342 133, 372 103, 400 80" stroke="#ffa800" strokeWidth="1.4" strokeOpacity="0.7" fill="none" />
-                <path d="M 226 200 C 236 142, 274 114, 314 124 C 344 136, 374 106, 400 90" stroke="#f97316" strokeWidth="1.4" strokeOpacity="0.7" fill="none" />
+                <path d="M 226 200 C 236 142, 274 114, 314 124 C 344 136, 374 106, 400 90" stroke="#f39019" strokeWidth="1.4" strokeOpacity="0.7" fill="none" />
                 <path d="M 229 200 C 239 143, 276 116, 316 126 C 346 139, 376 109, 400 100" stroke="#ffa800" strokeWidth="1.0" strokeOpacity="0.5" fill="none" />
                 <path d="M 232 200 C 242 144, 278 118, 318 128 C 348 142, 378 112, 400 110" stroke="#ffb700" strokeWidth="1.0" strokeOpacity="0.5" fill="none" />
-                <path d="M 220 0 C 230 60, 270 90, 310 80 C 340 70, 370 100, 400 130" stroke="#f97316" strokeWidth="1.8" strokeOpacity="0.9" fill="none" filter="url(#glow-orange)" />
+                <path d="M 220 0 C 230 60, 270 90, 310 80 C 340 70, 370 100, 400 130" stroke="#f39019" strokeWidth="1.8" strokeOpacity="0.9" fill="none" filter="url(#glow-orange)" />
                 <path d="M 223 0 C 233 59, 272 88, 312 78 C 342 67, 372 97, 400 120" stroke="#ffa800" strokeWidth="1.4" strokeOpacity="0.7" fill="none" />
-                <path d="M 226 0 C 236 58, 274 86, 314 76 C 344 64, 374 94, 400 110" stroke="#f97316" strokeWidth="1.4" strokeOpacity="0.7" fill="none" />
+                <path d="M 226 0 C 236 58, 274 86, 314 76 C 344 64, 374 94, 400 110" stroke="#f39019" strokeWidth="1.4" strokeOpacity="0.7" fill="none" />
                 <path d="M 229 0 C 239 57, 276 84, 316 74 C 346 61, 376 91, 400 100" stroke="#ffa800" strokeWidth="1.0" strokeOpacity="0.5" fill="none" />
                 <path d="M 232 0 C 242 56, 278 82, 318 72 C 348 58, 378 88, 400 90" stroke="#ffb700" strokeWidth="1.0" strokeOpacity="0.5" fill="none" />
               </svg>

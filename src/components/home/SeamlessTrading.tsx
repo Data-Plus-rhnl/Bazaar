@@ -43,7 +43,7 @@ export default function SeamlessTrading() {
                 strokeWidth="24"
                 fill="none"
                 opacity="0.9"
-                style={{ filter: 'drop-shadow(0 0 25px rgba(249, 115, 22, 0.45))' }}
+                style={{ filter: 'drop-shadow(0 0 25px rgba(243, 144, 25, 0.45))' }}
               />
               <circle
                 cx="200"
@@ -57,7 +57,7 @@ export default function SeamlessTrading() {
               <defs>
                 <linearGradient id="ringOrangeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
                   <stop offset="0%" stopColor="#ffb703" />
-                  <stop offset="50%" stopColor="#f97316" />
+                  <stop offset="50%" stopColor="#f39019" />
                   <stop offset="100%" stopColor="#c2410c" />
                 </linearGradient>
               </defs>
@@ -87,12 +87,12 @@ export default function SeamlessTrading() {
               style={{
                 position: 'relative',
                 background: 'rgba(14, 18, 28, 0.94)',
-                border: '1px solid rgba(249, 115, 22, 0.35)',
+                border: '1px solid rgba(243, 144, 25, 0.35)',
                 borderRadius: '20px',
                 padding: '22px 32px',
                 textAlign: 'center',
                 backdropFilter: 'blur(24px)',
-                boxShadow: '0 24px 60px rgba(0,0,0,0.85), 0 0 30px rgba(249, 115, 22, 0.15)',
+                boxShadow: '0 24px 60px rgba(0,0,0,0.85), 0 0 30px rgba(243, 144, 25, 0.15)',
                 zIndex: 3,
               }}
             >
@@ -119,7 +119,7 @@ export default function SeamlessTrading() {
                 zIndex: 2,
               }}
             >
-              <div style={{ fontSize: '1.5rem', fontWeight: '800', color: '#f97316', fontFamily: 'var(--font-display)', lineHeight: 1.1 }}>100%</div>
+              <div style={{ fontSize: '1.5rem', fontWeight: '800', color: '#f39019', fontFamily: 'var(--font-display)', lineHeight: 1.1 }}>100%</div>
               <div style={{ fontSize: '0.72rem', color: 'var(--text-dim)', textTransform: 'uppercase', letterSpacing: '0.05em', marginTop: '2px' }}>Non-Custodial</div>
             </div>
 

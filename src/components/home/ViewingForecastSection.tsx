@@ -34,7 +34,7 @@ export default function ViewingForecastSection() {
                 position: 'absolute',
                 width: 'min(100%, 340px)',
                 height: 'min(100%, 340px)',
-                background: 'radial-gradient(circle, rgba(249, 115, 22, 0.12) 0%, rgba(255, 183, 3, 0.06) 50%, transparent 70%)',
+                background: 'radial-gradient(circle, rgba(243, 144, 25, 0.12) 0%, rgba(255, 183, 3, 0.06) 50%, transparent 70%)',
                 filter: 'blur(50px)',
                 borderRadius: '50%',
                 pointerEvents: 'none',

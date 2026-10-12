@@ -109,7 +109,7 @@ export default function PricingPage() {
               style={{
                 background: tier.popular ? 'linear-gradient(180deg, #182030 0%, #0d121c 100%)' : 'var(--bg-card)',
                 border: tier.popular ? '1px solid var(--accent-primary)' : '1px solid var(--border-subtle)',
-                boxShadow: tier.popular ? '0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(249, 115, 22, 0.2)' : 'none',
+                boxShadow: tier.popular ? '0 20px 50px rgba(0,0,0,0.8), 0 0 30px rgba(243, 144, 25, 0.2)' : 'none',
                 display: 'flex',
                 flexDirection: 'column',
                 justifyContent: 'space-between',
